@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 55df4662c13ce7e44aa2b532d09a1e4d
+timeCreated: 1505247965
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Cubic
+  fontNames:
+  - Cubic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
