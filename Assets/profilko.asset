@@ -42,7 +42,7 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 0.89
+      intensity: 0.43
       radius: 0.42
       sampleCount: 10
       downsampling: 1
@@ -124,8 +124,8 @@ MonoBehaviour:
         temperature: -14.9
         tint: 0
         hueShift: 0
-        saturation: 1
-        contrast: 1
+        saturation: 0.52
+        contrast: 1.4
       channelMixer:
         red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1, z: 0}
@@ -284,13 +284,13 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       spectralTexture: {fileID: 0}
-      intensity: 0.336
+      intensity: 1
   grain:
     m_Enabled: 1
     m_Settings:
-      colored: 1
-      intensity: 0.375
-      size: 0.5
+      colored: 0
+      intensity: 0.861
+      size: 0.81
       luminanceContribution: 0.8
   vignette:
     m_Enabled: 1
@@ -298,7 +298,7 @@ MonoBehaviour:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
       center: {x: 0.5, y: 0.5}
-      intensity: 0.356
+      intensity: 0.99
       smoothness: 0.56
       roundness: 0.759
       mask: {fileID: 0}
