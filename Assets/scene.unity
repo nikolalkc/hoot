@@ -2146,13 +2146,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1470055734}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 1, y: -0, z: -0, w: 0.00000058114523}
   m_LocalPosition: {x: 133.6, y: 2.4, z: 4.31}
   m_LocalScale: {x: 0.13757648, y: 7.483013, z: 5.3094625}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: -0.000015258789, z: -0.000015258789}
 --- !u!1 &1479634592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,6 +2665,7 @@ GameObject:
   - component: {fileID: 1904078802}
   - component: {fileID: 1904078804}
   - component: {fileID: 1904078803}
+  - component: {fileID: 1904078805}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -2794,6 +2795,28 @@ MonoBehaviour:
   radius: {x: 0.64, y: 0.82}
   angle: 179
   center: {x: 0.51, y: 0.5}
+--- !u!114 &1904078805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1904078797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad5467732270489caa1d54fe84f1618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalResolution: 400
+  verticalResolution: 400
+  numColors: 8
+  color0: {r: 0, g: 0, b: 0, a: 1}
+  color1: {r: 1, g: 1, b: 1, a: 1}
+  color2: {r: 1, g: 0.29411766, b: 0.29411766, a: 1}
+  color3: {r: 1, g: 0.7294118, b: 0.07450981, a: 1}
+  color4: {r: 0.91764706, g: 0.9137255, b: 0, a: 1}
+  color5: {r: 0.5176471, g: 0.8117647, b: 0.27058825, a: 1}
+  color6: {r: 0, g: 0.64705884, b: 0.7921569, a: 1}
+  color7: {r: 0.7529412, g: 0.41568628, b: 0.7607843, a: 1}
 --- !u!1 &1971413917
 GameObject:
   m_ObjectHideFlags: 0

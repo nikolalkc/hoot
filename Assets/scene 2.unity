@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.64705884, g: 0.64705884, b: 0.64705884, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 2.57
+  m_AmbientIntensity: 3.01
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -979,8 +979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ad5467732270489caa1d54fe84f1618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalResolution: 267
-  verticalResolution: 200
+  horizontalResolution: 350
+  verticalResolution: 350
   numColors: 8
   color0: {r: 0, g: 0, b: 0, a: 1}
   color1: {r: 1, g: 1, b: 1, a: 1}
@@ -1067,10 +1067,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4975a6e437fc3b149a8cd508ce5bdd69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshold: 0
-  intensity: 1.19
-  blurSize: 2.92
-  blurIterations: 2
+  threshold: 0.411
+  intensity: 0.62
+  blurSize: 0.47
+  blurIterations: 1
   blurType: 0
   fastBloomShader: {fileID: 4800000, guid: 68a00c837b82e4c6d92e7da765dc5f1d, type: 3}
 --- !u!114 &1453972399
