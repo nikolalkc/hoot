@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 114221326359972030}
   - component: {fileID: 114241295611253638}
   - component: {fileID: 114408902653526136}
+  - component: {fileID: 114349985575415270}
   m_Layer: 0
   m_Name: FPS
   m_TagString: MainCamera
@@ -427,14 +428,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1425955409516598}
-  m_LocalRotation: {x: -0, y: 0.99982715, z: -0, w: -0.018591637}
-  m_LocalPosition: {x: 0, y: 4.96, z: 0}
+  m_LocalRotation: {x: -0, y: 0.43339387, z: -0, w: 0.90120465}
+  m_LocalPosition: {x: 12.74, y: 7.01, z: 10.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4788872978779820}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -486.9, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -668.634, z: 0}
 --- !u!4 &4620938900009566
 Transform:
   m_ObjectHideFlags: 1
@@ -1162,11 +1163,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 0
-  sensitivityDepth: 0.88
-  sensitivityNormals: 0.84
+  sensitivityDepth: 0.15
+  sensitivityNormals: 1.2
   lumThreshold: 0.2
-  edgeExp: 2.57
-  sampleDist: 3.27
+  edgeExp: 1
+  sampleDist: 2.17
   edgesOnly: 0
   edgesOnlyBgColor: {r: 1, g: 1, b: 1, a: 1}
   edgeDetectShader: {fileID: 4800000, guid: 0d1644bdf064147baa97f235fc5b4903, type: 3}
@@ -1181,17 +1182,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ad5467732270489caa1d54fe84f1618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalResolution: 350
-  verticalResolution: 350
+  horizontalResolution: 400
+  verticalResolution: 400
   numColors: 8
   color0: {r: 0, g: 0, b: 0, a: 1}
   color1: {r: 1, g: 1, b: 1, a: 1}
-  color2: {r: 0.8308824, g: 0.38489407, b: 0.5048496, a: 1}
+  color2: {r: 0.1665225, g: 0.52775323, b: 0.64705884, a: 1}
   color3: {r: 0.29720265, g: 0.21896628, b: 0.5514706, a: 1}
   color4: {r: 0.91764706, g: 0.9137255, b: 0, a: 1}
   color5: {r: 0.17733562, g: 0.14705884, b: 0.44117647, a: 1}
   color6: {r: 0, g: 0.64705884, b: 0.7921569, a: 1}
-  color7: {r: 0.7529412, g: 0.41568628, b: 0.7607843, a: 1}
+  color7: {r: 0.44604236, g: 0.8603911, b: 0.9191176, a: 1}
 --- !u!114 &114241295611253638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1204,6 +1205,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wantedAspectRatio: 2.35
+--- !u!114 &114349985575415270
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1439646019078974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478a2083ad114a07d000fbfb8d76c639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: e9ba2083ad114a07d000fbfb8d76c639, type: 3}
+  blurAmount: 0.233
+  extraBlur: 0
 --- !u!114 &114408902653526136
 MonoBehaviour:
   m_ObjectHideFlags: 1
