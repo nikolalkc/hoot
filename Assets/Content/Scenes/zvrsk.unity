@@ -856,9 +856,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: 641b781cad112c75d0008dfa8d76c639, type: 3}
-  radius: {x: 0.16, y: 0.55}
+  radius: {x: 0.22, y: 0.55}
   angle: 180
-  center: {x: 0.56, y: 0.5}
+  center: {x: 0.5, y: 0.5}
 --- !u!1 &708647717
 GameObject:
   m_ObjectHideFlags: 0
