@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Content/Scenes/zvrsk.unity
-    guid: 6ec0294634d816546a8315bbed52922f
+    path: Assets/Content/Scenes/Home.unity
+    guid: f6074a3bec67ded4c89045d7d9981479
