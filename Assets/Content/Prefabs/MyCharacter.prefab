@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 54635674024233996}
   - component: {fileID: 82905517239557060}
   - component: {fileID: 114605163226957176}
+  - component: {fileID: 136877616094483076}
   m_Layer: 0
   m_Name: MyCharacter
   m_TagString: Untagged
@@ -428,14 +429,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1425955409516598}
-  m_LocalRotation: {x: -0, y: 0.43339387, z: -0, w: 0.90120465}
-  m_LocalPosition: {x: 12.74, y: 7.01, z: 10.13}
+  m_LocalRotation: {x: -0, y: -0.69795257, z: -0, w: -0.716144}
+  m_LocalPosition: {x: 17.98, y: 7.71, z: -5.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4788872978779820}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -668.634, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -991.474, z: 0}
 --- !u!4 &4620938900009566
 Transform:
   m_ObjectHideFlags: 1
@@ -1204,7 +1205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad3291fed3c72a40aa5f24287b5a6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wantedAspectRatio: 2.35
+  _wantedAspectRatio: 2.5
 --- !u!114 &114349985575415270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1217,7 +1218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: e9ba2083ad114a07d000fbfb8d76c639, type: 3}
-  blurAmount: 0.233
+  blurAmount: 0.42
   extraBlur: 0
 --- !u!114 &114408902653526136
 MonoBehaviour:
@@ -1244,6 +1245,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftHand: {fileID: 1557965794229986}
   rightHand: {fileID: 1940588904956264}
+  Objective: {fileID: 0}
+  objectives:
+  - TAKE A PISS!
+  - GO EAT!
+  - HAVE FUN!
+  - FIX THE CAR!
+  - GO TO SLEEP
+  objective_index: 0
+  nextTaskTime: 3
 --- !u!114 &114644676980285236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1256,8 +1266,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IsWalking: 0
-  m_WalkSpeed: 1
-  m_RunSpeed: 5
+  m_WalkSpeed: 2.5
+  m_RunSpeed: 3
   m_RunstepLenghten: 0.641
   m_JumpSpeed: 3
   m_StickToGroundForce: 10
@@ -1271,7 +1281,7 @@ MonoBehaviour:
     smooth: 0
     smoothTime: 5
     lockCursor: 1
-  m_UseFovKick: 1
+  m_UseFovKick: 0
   m_FovKick:
     Camera: {fileID: 0}
     originalFov: 0
@@ -1489,6 +1499,19 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &136877616094483076
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1425955409516598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.76
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &143890119391817106
 CharacterController:

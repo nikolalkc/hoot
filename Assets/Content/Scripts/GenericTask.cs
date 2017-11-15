@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GenericTask : MonoBehaviour {
-	public int Index;
+	public int TaskIndex;
 	public bool isEnabled;
-	public AudioSource task_fx_source;
+	AudioSource task_fx_source;
 	public AudioClip sfx;
 	// Use this for initialization
 	void Start () {

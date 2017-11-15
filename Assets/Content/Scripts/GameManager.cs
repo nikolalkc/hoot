@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 	public GameObject leftHand, rightHand;
@@ -10,6 +11,8 @@ public class GameManager : MonoBehaviour {
 	public string[] objectives;
 	public int objective_index = 0;
 	Collider CurrentObjectiveCollider;
+	public int nextTaskTime = 3;
+	public GameObject LightHolder;
 	// Use this for initialization
 	void Start () {
 		Objective.text = objectives[objective_index];
@@ -49,7 +52,11 @@ public class GameManager : MonoBehaviour {
 	void OnTriggerEnter(Collider col) {
 		//print (col.tag);
 		if (col.tag == "task") {
-			SetHandsActive (true);
+			int col_task_index = col.gameObject.GetComponent<GenericTask> ().TaskIndex;
+			if (col_task_index == objective_index) {
+				SetHandsActive (true);	
+			}
+
 		}
 		CurrentObjectiveCollider = col;
 	}
@@ -58,15 +65,15 @@ public class GameManager : MonoBehaviour {
 		if (col.tag == "task") {
 			SetHandsActive (false);
 		}
-		CurrentObjectiveCollider = null;
 	}
 
 	void CompleteActiveTask() {
-		Objective.text = "COMPLETED";
+		DoStuff ();
+		Objective.text = "";
 		SetHandsActive (false);
 		CurrentObjectiveCollider.gameObject.GetComponent<GenericTask> ().PlayTaskSound ();
 		CurrentObjectiveCollider.enabled = false;
-
+		Invoke ("EnableNextTask", nextTaskTime);
 	}
 
 
@@ -81,4 +88,30 @@ public class GameManager : MonoBehaviour {
 
 	
 	}
+
+	void EnableNextTask() {
+		if (objective_index < objectives.Length-1) {
+			objective_index++;
+			Objective.text = objectives [objective_index];		
+		} else {
+			//Objective.text = "WELL DONE. GAME COMPLETED";
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		}
+
+	}
+
+
+
+	void DoStuff() {
+		switch (objective_index) {
+		case 0:
+			LightHolder.GetComponent<InitLights> ().TurnOnLights ();
+			break;
+		default:
+			break;
+		}
+	
+	}
+
+
 }
